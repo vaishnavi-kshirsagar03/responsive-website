@@ -7,42 +7,149 @@
     <style>
        
         .fruit-container{
-           
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: space-around;
           
         }
-        .Fruit-product{
+        .Fruit-card{
             height: 350px;
-            width: 300px ;
-            background-color: brown;
+            width: 250px ;
+            background-color: rgb(173, 129, 114);
             margin-left: 20px;
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0 0 5px 5px black; 
+            margin: 10px 10px;
+            
            
         }
-        .title{
+        .img-product{
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px 10px 0 0;
             height: 150px;
-            width: 80%;
+            object-fit: cover;
+
+        }
+        .btn{
+            color: azure;
+            background-color: rgb(42, 143, 11);
+            font-size: 20px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .btn:hover{
+            cursor: pointer;
+            box-shadow: 1px 1px 5px 5px greenyellow;
+        }
+        .title{
+            text-align: center;
+            font-size: 30px;
+        }
+        .discription{
+            text-align: center;
+            font-size: 13px;
             
 
 
         }
+        /* Default styles */
+body {
+  font-size: 18px;
+}
+
+/* Mobile  */
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 1024px) and (max-width: 1280px) {
+  body {
+    font-size: 18px;
+  }
+}
+
 
     </style>
 </head>
 <body>
-    <center>
-        <i class="fa-solid fa-house"> &nbsp; home &nbsp; | &nbsp; </i> 
-        <i class="fa-solid fa-magnifying-glass"> &nbsp;search &nbsp; | &nbsp;</i>
-        <i class="fa-solid fa-heart">  &nbsp; Whishlist &nbsp; | &nbsp;</i>
-        <i class="fa-solid fa-gift"> &nbsp; Gifts &nbsp; | &nbsp;</i>
-        <i class="fa-solid fa-phone"> &nbsp; Call &nbsp; | &nbsp;</i>
-        <i class="fa-solid fa-user"> &nbsp; User</i>
-       </center>
-       <script src="https://kit.fontawesome.com/7aaa628fd4.js" crossorigin="anonymous"></script> 
-    <div class="fruit-container">
-       <div class="Fruit-product">
-        <img src="./img/apple.avif" class="title" alt="apple" height="100px " width="150">
-        <h1>
+     <div class="fruit-container">
+       <div class="Fruit-card">
+        <img src="./img/apple.avif" class="img-product" alt="apple" height="100px " width="150">
+        <h1 class="title">Apple</h1>
+        <p class="discription">Rich in Nutrients: Apples are a great source of essential vitamins and minerals, particularly Vitamin C, potassium, and antioxidants, which support overall health.</p>
+        <button class="btn">buy now</button> </div>
 
-        </h1>
+        <div class="Fruit-card">
+            <img src="./img/mango.avif" class="img-product" alt="apple" height="100px " width="150">
+            <h1 class="title">Mango</h1>
+            <p class="discription">Rich in Nutrients: mango are a great source of essential vitamins and minerals, particularly Vitamin C, potassium, and antioxidants, which support overall health.</p>
+            <button class="btn">buy now</button> </div>
+
+        <div class="Fruit-card">
+             <img src="./img/orange.avif" class="img-product" alt="apple" height="100px " width="150">
+            <h1 class="title">orange</h1>
+            <p class="discription">Rich in Nutrients: orange are a great source of essential vitamins and minerals,particularly Vitamin C, potassium, and antioxidants, which support overall health.</p>
+            <button class="btn">buy now</button> </div>
+
+         <div class="Fruit-card">
+             <img src="./img/grapes.avif" class="img-product" alt="apple" height="100px " width="150">
+            <h1 class="title">Grapes</h1>
+            <p class="discription">Rich in Nutrients: grapes are a great source of essential vitamins and minerals, particularly Vitamin C, potassium, and antioxidants, which support overall health.</p>
+          <button class="btn">buy now</button> </div>
+
+          <div class="Fruit-card">
+            <img src="./img/guava.avif" class="img-product" alt="apple" height="100px " width="150">
+           <h1 class="title">Guava</h1>
+           <p class="discription">Rich in Nutrients: guava are a great source of essential vitamins and minerals,particularly Vitamin C, potassium, and antioxidants, which support overall health.</p>
+           <button class="btn">buy now</button> </div>
+            <br>
+            <br>
+
+        <div class="Fruit-card">
+            <img src="./img/avocado.avif" class="img-product" alt="apple" height="100px " width="150">
+           <h1 class="title">Avocado</h1>
+           <p class="discription">Rich in Nutrients: avocada are a great source of essential vitamins and minerals, particularly Vitamin C, potassium, and antioxidants, which support overall health.</p>
+         <button class="btn">buy now</button> </div>
+
+         <div class="Fruit-card">
+            <img src="./img/bnana.avif" class="img-product" alt="apple" height="100px " width="150">
+           <h1 class="title">Banana</h1>
+           <p class="discription">Rich in Nutrients: banana are a great source of essential vitamins and minerals, particularly Vitamin C, potassium, and antioxidants, which support overall health.</p>
+         <button class="btn">buy now</button> </div>
+         
+         <div class="Fruit-card">
+            <img src="./img/stroberry.avif" class="img-product" alt="apple" height="100px " width="150">
+           <h1 class="title">Strawberry</h1>
+           <p class="discription">Rich in Nutrients: strawbeery are a great source of essential vitamins and minerals, particularly Vitamin C, potassium, and antioxidants, which support overall health.</p>
+         <button class="btn">buy now</button> </div>
+         
+         <div class="Fruit-card">
+            <img src="./img/watermelon.avif" class="img-product" alt="apple" height="100px " width="150">
+           <h1 class="title">Watermelon</h1>
+           <p class="discription">Rich in Nutrients: watermelon are a great source of essential vitamins and minerals, particularly Vitamin C, potassium, and antioxidants, which support overall health.</p>
+         <button class="btn">buy now</button> </div>
+
+         <div class="Fruit-card">
+            <img src="./img/prach.avif" class="img-product" alt="apple" height="100px " width="150">
+           <h1 class="title">Peach</h1>
+           <p class="discription">Rich in Nutrients:peach are a great source of essential vitamins and minerals, particularly Vitamin C, potassium, and antioxidants, which support overall health.</p>
+         <button class="btn">buy now</button> </div>
+ 
+
     </div> 
     
 
